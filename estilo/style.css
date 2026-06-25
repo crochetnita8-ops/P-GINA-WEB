@@ -52,6 +52,13 @@ a:hover {color: #9C9C9C;
     margin-bottom: 10px;
 }
 
+.contenedor-tarjetas {
+    display: flex;          /* Activa el modo fila */
+    flex-wrap: wrap;       /* Si no caben en pantallas pequeñas, se bajan automáticamente */
+    gap: 20px;             /* Añade separación de 20px entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas en la pantalla */
+}
+
 .tarjeta h3 {
     color: #333;
     margin-top: 0;
