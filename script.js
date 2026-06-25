@@ -26,42 +26,40 @@ window.addEventListener("load", function () {
 
 
 
-const poncho_multicolor = [
-  "IMAGENES/Poncho_verano_1.1.1.jpg",
-  "IMAGENES/Poncho_verano_1.1.2.jpg",
-  "IMAGENES/Poncho_verano_1.1.3.jpg",
-];
 
-let indice = 0;
-
-const img = document.getElementById("poncho_multicolor");
-
-function cambiarImagen() {
-  indice = (indice + 1) % poncho_multicolor.length;
-  img.src = poncho_multicolor[indice];
-}
-// espera a que cargue TODO el HTML
-window.addEventListener("load", function () {
-  setInterval(cambiarImagen, 2500);
-});
-
-
-
-const poncho_blanco = [
+const poncho_blanco_fotos = [
   "IMAGENES/Poncho_blanco_1.jpg",
   "IMAGENES/Poncho_blanco_2.jpg",
-  "IMAGENES/Poncho_blanco_3.jpg",
+  "IMAGENES/Poncho_blanco_3.jpg"
 ];
+let indice_blanco = 0;
+const img_blanco = document.getElementById("poncho_blanco");
 
-let indice = 0;
-
-const img = document.getElementById("poncho_blanco");
-
-function cambiarImagen() {
-  indice = (indice + 1) % poncho_blanco.length;
-  img.src = poncho_blanco[indice];
+function cambiarPonchoBlanco() {
+  if (img_blanco) {
+    indice_blanco = (indice_blanco + 1) % poncho_blanco_fotos.length;
+    img_blanco.src = poncho_blanco_fotos[indice_blanco];
+  }
 }
-// espera a que cargue TODO el HTML
+
+
+const poncho_multicolor_fotos = [
+  "IMAGENES/Poncho_verano_1.1.1.jpg",
+  "IMAGENES/Poncho_verano_1.1.2.jpg", // Asegúrate de que estos nombres existan
+  "IMAGENES/Poncho_verano_1.1.3.jpg"
+];
+let indice_multicolor = 0;
+const img_multicolor = document.getElementById("poncho_multicolor");
+
+function cambiarPonchoMulticolor() {
+  if (img_multicolor) {
+    indice_multicolor = (indice_multicolor + 1) % poncho_multicolor_fotos.length;
+    img_multicolor.src = poncho_multicolor_fotos[indice_multicolor];
+  }
+}
+
+// TEMPORIZADORES AL CARGAR LA PÁGINA ---
 window.addEventListener("load", function () {
-  setInterval(cambiarImagen, 2500);
+  setInterval(cambiarPonchoBlanco, 2500);
+  setInterval(cambiarPonchoMulticolor, 2500);
 });
