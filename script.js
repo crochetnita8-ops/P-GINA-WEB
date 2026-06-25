@@ -9,8 +9,7 @@ const carrusel = [
 ];
 
 let indice = 0;
-
-const img = document.getElementById("carrusel");
+let img;
 
 function cambiarImagen() {
   indice = (indice + 1) % carrusel.length;
@@ -18,9 +17,11 @@ function cambiarImagen() {
 }
 
 window.addEventListener("load", function () {
+
+  img = document.getElementById("carrusel"); 
+  
   setInterval(cambiarImagen, 2500);
 });
-
 
 
 
