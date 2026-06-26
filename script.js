@@ -5,7 +5,7 @@ const carrusel = [
   "IMAGENES/c4.jpg",
   "IMAGENES/c5.jpg",
   "IMAGENES/c6.jpg",
-  "IMAGENES/c7.jpg",
+  "IMAGENES/c8.jpg",
 ];
 
 let indice = 0;
