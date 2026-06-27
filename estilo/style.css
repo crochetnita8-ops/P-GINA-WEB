@@ -2,7 +2,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
-  background-color: #eee; /*BORDES, gris*/
+  background-color: #ffffff; /*BORDES, gris*/
   margin: 0;}
 
 h2 {
@@ -17,13 +17,24 @@ h3 {
 
 
 .bordes{    /*todo el texto (EN BLANCO)*/
-  background-color: #eee;
+  background-color: #ffffff;
   margin-top: 10px;
   margin-bottom: 20px;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 190px;
+  margin-left: 190px;
   border-radius: 8px;
   padding: 35px; /*margenes de los margenes*/
+}
+
+.bloque-caja {
+    display: flex;           
+    justify-content: center;  
+    flex-wrap: wrap;         
+}
+.bloque-caja img {
+    justify-content: center; 
+    margin: 5px 10px;
+    border-radius: 20px
 }
 
 .bloque-imagenes img {

@@ -25,9 +25,6 @@ window.addEventListener("load", function () {
 
 
 
-
-
-
 const poncho_blanco_fotos = [
   "IMAGENES/Poncho_blanco_1.jpg",
   "IMAGENES/Poncho_blanco_2.jpg",
@@ -46,7 +43,7 @@ function cambiarPonchoBlanco() {
 
 const poncho_multicolor_fotos = [
   "IMAGENES/Poncho_verano_1.1.1.jpg",
-  "IMAGENES/Poncho_verano_1.1.2.jpg", // Asegúrate de que estos nombres existan
+  "IMAGENES/Poncho_verano_1.1.2.jpg", 
   "IMAGENES/Poncho_verano_1.1.3.jpg"
 ];
 let indice_multicolor = 0;
@@ -59,7 +56,23 @@ function cambiarPonchoMulticolor() {
   }
 }
 
-// TEMPORIZADORES AL CARGAR LA PÁGINA ---
+const gorro_verano_fotos = [
+  "IMAGENES/Gorro_verano1.jpg",
+  "IMAGENES/Gorro_verano2.jpg",
+  "IMAGENES/Gorro_verano3.jpg"
+];
+let indice_gorro = 0;
+const img_gorro = document.getElementById("gorro_verano");
+
+function cambiarGorroVerano() {
+  if (img_gorro) {
+    indice_gorro = (indice_gorro + 1) % gorro_verano_fotos.length;
+    img_gorro.src = gorro_verano_fotos[indice_gorro];
+  }
+    setInterval(cambiarGorroVerano, 2500);
+}
+
+
 window.addEventListener("load", function () {
   setInterval(cambiarPonchoBlanco, 2500);
   setInterval(cambiarPonchoMulticolor, 2500);
