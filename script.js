@@ -68,12 +68,12 @@ window.addEventListener("load", function () {
 });
 
 const gorro_verano_fotos = [
-  "IMAGENES/Gorro_verano1.jpg", 
-  "IMAGENES/Gorro_verano2.jpg",
-  "IMAGENES/Gorro_verano7.jpg",
-  "IMAGENES/Gorro_verano4.jpg",
-  "IMAGENES/Gorro_verano5.jpg",
-  "IMAGENES/Gorro_verano3.jpg"
+  "IMAGEN/Gorro_verano1.jpg", 
+  "IMAGEN/Gorro_verano2.jpg",
+  "IMAGEN/Gorro_verano7.jpg",
+  "IMAGEN/Gorro_verano4.jpg",
+  "IMAGEN/Gorro_verano5.jpg",
+  "IMAGEN/Gorro_verano3.jpg"
 ];
 let indice_gorro = 0;
 let img_gorro;
