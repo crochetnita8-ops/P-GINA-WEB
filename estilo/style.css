@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
+ display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh; 
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
   background-color: #ffffff; /*BORDES, gris*/
   margin: 0;}
@@ -34,38 +38,52 @@ h3 {
 .bloque-caja img {
     justify-content: center; 
     margin: 5px 10px;
-    border-radius: 20px
+    border-radius: 20px;
 }
 
 .bloque-imagenes img {
-    justify-content: center; 
-    margin: 5px 10px;
-    border-radius: 20px; 
+    border-radius: 20px;
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+
+}
+
+.caja-redonda {
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  padding: 8px;
 }
 
 
-a { color:rgba(223, 193, 1, 0.831); }
+a {  color:rgba(223, 193, 1, 0.831);
+text-decoration: none }
 a:hover {color: #9C9C9C;
  text-decoration: none; }
 
 .menu-list{ 
-    background-color: rgba(216, 207, 104, 0.76);
+    background-color: rgba(216, 207, 104, 0.673);
     border-radius: 8px;
     text-align: center;  
 }
 .tarjeta {
-    border: 1px solid #f7ea6fcb;
+    border: 3px solid #f7ea6fcb;
     border-radius: 12px;
     padding: 20px;
-    max-width: 350px; /* Limita el ancho */
+    max-width: 350px;  /* Limita el ancho */
     background-color: #dbdadaa2;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    justify-content: center;
+    margin-inline: auto; 
 }
 
 .contenedor-tarjetas {
     display: flex;  
-    flex-wrap: wrap;     /*se bajan automáticamente */
+    flex-wrap: wrap;  
     gap: 20px;             
     justify-content: center; 
 }

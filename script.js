@@ -89,3 +89,20 @@ window.addEventListener("load", function () {
   img_gorro = document.getElementById("gorro_verano");
   setInterval(cambiarGorroVerano, 2500);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+
+
+    const formulario = document.getElementById('mi-formulario');
+    const emailInput = document.getElementById('campo-email');
+
+    if (formulario) {
+        formulario.addEventListener('submit', function(evento) {
+
+            if (!emailInput.checkValidity()) {
+                evento.preventDefault(); 
+                alert('¡Por favor, pon un correo electrónico válido!');
+            }
+        });
+    }
+});
