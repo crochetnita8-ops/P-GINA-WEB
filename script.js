@@ -90,6 +90,84 @@ window.addEventListener("load", function () {
   setInterval(cambiarGorroVerano, 2500);
 });
 
+
+const camiseta_verano_fotos = [
+  "DEGRADADO_R_M_N/DEG_1.jpg",
+  "DEGRADADO_R_M_N/DEG_2.jpg", 
+  "DEGRADADO_R_M_N/DEG_3.jpg",
+  "DEGRADADO_R_M_N/DEG_4.jpg",
+  "DEGRADADO_R_M_N/DEG_5.jpg",
+  "DEGRADADO_R_M_N/DEG_6.jpg"
+];
+let indice_camiseta = 0;
+let img_camiseta;
+
+function cambiarCamisetaVerano() {
+  if (img_camiseta) {
+    indice_camiseta = (indice_camiseta + 1) % camiseta_verano_fotos.length;
+    img_camiseta.src = camiseta_verano_fotos[indice_camiseta];
+  }
+}
+
+window.addEventListener("load", function () {
+  img_camiseta = document.getElementById("camiseta_verano");
+  setInterval(cambiarCamisetaVerano, 2500);
+});
+
+
+const camiseta_entretiempo_fotos = [
+  "IMAGEN/Flor_1.jpg",
+  "IMAGEN/Flor_2.jpg",
+  "IMAGEN/Flor_3.jpg",
+  "IMAGEN/Flor_4.jpg",
+  "IMAGEN/Flor_5.jpg"
+];
+let indice_entretiempo = 0;
+let img_entretiempo;
+
+function cambiarCamisetaEntretiempo() {
+  if (img_entretiempo) {
+    indice_entretiempo = (indice_entretiempo + 1) % camiseta_entretiempo_fotos.length;
+    img_entretiempo.src = camiseta_entretiempo_fotos[indice_entretiempo];
+  }
+}
+
+window.addEventListener("load", function () {
+  img_entretiempo = document.getElementById("camiseta_entretiempo");
+  setInterval(cambiarCamisetaEntretiempo, 2500);
+});
+
+
+
+
+
+const blusa_veraniega_fotos = [
+  "DEGRADADO_R_M_N/BL_1.jpg",
+  "DEGRADADO_R_M_N/BL_2.jpg", 
+  "DEGRADADO_R_M_N/BL_3.jpg",
+  "DEGRADADO_R_M_N/BL_4.jpg",
+  "DEGRADADO_R_M_N/BL_5.jpg"
+];
+let indice_blusa = 0;
+let img_blusa;
+
+function cambiarBlusaVeraniega() {
+  if (img_blusa) {
+    indice_blusa = (indice_blusa + 1) % blusa_veraniega_fotos.length;
+    img_blusa.src = blusa_veraniega_fotos[indice_blusa];
+  }
+}
+
+window.addEventListener("load", function () {
+  img_blusa = document.getElementById("blusa_veraniega");
+  setInterval(cambiarBlusaVeraniega, 2500);
+});
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
 
 
