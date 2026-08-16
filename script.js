@@ -116,11 +116,11 @@ window.addEventListener("load", function () {
 
 
 const camiseta_entretiempo_fotos = [
-  "IMAGEN/Flor_1.jpg",
-  "IMAGEN/Flor_2.jpg",
-  "IMAGEN/Flor_3.jpg",
-  "IMAGEN/Flor_4.jpg",
-  "IMAGEN/Flor_5.jpg"
+  "CAMISETA_NEG_FLO/Flor_1.jpg",
+  "CAMISETA_NEG_FLO/Flor_2.jpg",
+  "CAMISETA_NEG_FLO/Flor_3.jpg",
+  "CAMISETA_NEG_FLO/Flor_4.jpg",
+  "CAMISETA_NEG_FLO/Flor_5.jpg"
 ];
 let indice_entretiempo = 0;
 let img_entretiempo;
