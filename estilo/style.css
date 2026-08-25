@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://googleapis.com');
 
 body {
  display: flex;
@@ -23,7 +23,6 @@ h3 {
     font-family: 'Amatic SC', cursive;
     font-size: 18px; 
   }
-
 
 .bordes{    /*todo el texto (EN BLANCO)*/
   background-color: #ffffff;
@@ -54,7 +53,6 @@ h3 {
     align-items: center !important;
     margin: 0 auto !important;
     text-align: center !important;
-
 }
 
 .caja-redonda {
@@ -62,7 +60,6 @@ h3 {
   border: 1px solid #aaa;
   padding: 8px;
 }
-
 
 a {  color:rgba(223, 193, 1, 0.831);
 text-decoration: none }
