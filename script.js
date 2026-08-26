@@ -171,10 +171,10 @@ window.addEventListener("load", function () {
 
 
 const chaleco_verde_fotos = [
-  "IMAGEN/c.verde (1).jpg",
-  "IMAGEN/c.verde (2).jpg", 
-  "IMAGEN/c.verde (3).jpg",
-  "IMAGEN/c.verde (4).jpg"
+  "CAMISETA_NEG_FLO/c.verde (1).jpg",
+  "CAMISETA_NEG_FLO/c.verde (2).jpg", 
+  "CAMISETA_NEG_FLO/c.verde (3).jpg",
+  "CAMISETA_NEG_FLO/c.verde (4).jpg"
 ];
 let indice_chaleco = 0;
 let img_chaleco;
