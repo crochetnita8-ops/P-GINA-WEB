@@ -139,6 +139,10 @@ window.addEventListener("load", function () {
 
 
 
+window.addEventListener("load", function () {
+  img_blusa = document.getElementById("blusa_veraniega");
+  setInterval(cambiarBlusaVeraniega, 2500);
+});
 
 
 const blusa_veraniega_fotos = [
@@ -164,6 +168,28 @@ window.addEventListener("load", function () {
 });
 
 
+
+
+const chaleco_verde_fotos = [
+  "IMAGEN/c.verde (1).jpg",
+  "IMAGEN/c.verde (2).jpg", 
+  "IMAGEN/c.verde (3).jpg",
+  "IMAGEN/c.verde (4).jpg"
+];
+let indice_chaleco = 0;
+let img_chaleco;
+
+function cambiarChalecoVerde() {
+  if (img_chaleco) {
+    indice_chaleco = (indice_chaleco + 1) % chaleco_verde_fotos.length;
+    img_chaleco.src = chaleco_verde_fotos[indice_chaleco];
+  }
+}
+
+window.addEventListener("load", function () {
+  img_chaleco = document.getElementById("chaleco_verde");
+  setInterval(cambiarChalecoVerde, 2500);
+});
 
 
 
@@ -192,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const texto = document.getElementById('texto-pedido');
 
         boton.addEventListener('click', function (evento) {
-            evento.preventDefault(); // Evita que la página suba o recargue por el '#'
-            texto.classList.toggle('mostrar'); // Muestra u oculta el texto
+            evento.preventDefault(); 
+            texto.classList.toggle('mostrar'); 
         });
     });
