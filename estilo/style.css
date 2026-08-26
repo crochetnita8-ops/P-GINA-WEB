@@ -74,31 +74,48 @@ a:hover {color: #9C9C9C;
 .tarjeta {
     border: 3px solid #f7ea6fcb;
     border-radius: 12px;
-    padding: 20px;
-    max-width: 350px; 
+    padding: 15px;  
+    width: calc(33.33% - 14px);
+    min-width: 280px;          
     background-color: #dbdadaa2;
     text-align: center;
-    margin-bottom: 50px;
-    justify-content: center;
-    margin-inline: auto; 
+    margin-bottom: 30px; 
+    box-sizing: border-box;
+    height: auto;  
+    padding: 15px 20px;        
+
 }
 
-.tarjeta-diseño {
-    display: flex;
-    flex-direction: column; 
-    flex: 1;   
+.tarjeta-inicio { 
+    display: flex;             
+    justify-content: center;   
+    align-items: center;      
     border: 3px solid #f7ea6fcb;
     border-radius: 12px;
-    width: 100%;      
-    max-width: 350px;
-    height: 60px; 
     background-color: #dbdadaa2;
+    padding: 15px 20px; 
+    width: 100%;
+    max-width: 480px; 
+    height: 45px;       
     text-align: center;
-    margin-bottom: 50px;
-    padding: 10px 20px;
-    align-items: center;
-    justify-content: center;
-  
+   
+} 
+    
+  .tarjeta-diseño {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 3px solid #f7ea6fcb;
+    border-radius: 12px;
+    background-color: #dbdadaa2;
+    padding: 15px 20px; 
+    width: 100%;
+    max-width: 380px; 
+    height: 45px;       
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 45px;
+    margin-right: 1px;
 }
 
 
@@ -120,6 +137,8 @@ a:hover {color: #9C9C9C;
     flex-wrap: wrap;  
     gap: 20px;             
     justify-content: center; 
+    max-width: 1200px; 
+    margin: 0 auto;
 }
 
 .tarjeta h3 {
