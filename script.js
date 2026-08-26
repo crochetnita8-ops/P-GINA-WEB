@@ -184,3 +184,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const boton = document.getElementById('boton-pedido');
+        const texto = document.getElementById('texto-pedido');
+
+        boton.addEventListener('click', function (evento) {
+            evento.preventDefault(); // Evita que la página suba o recargue por el '#'
+            texto.classList.toggle('mostrar'); // Muestra u oculta el texto
+        });
+    });

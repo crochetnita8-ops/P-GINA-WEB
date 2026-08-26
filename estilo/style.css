@@ -83,6 +83,38 @@ a:hover {color: #9C9C9C;
     margin-inline: auto; 
 }
 
+.tarjeta-diseño {
+    display: flex;
+    flex-direction: column; 
+    flex: 1;   
+    border: 3px solid #f7ea6fcb;
+    border-radius: 12px;
+    width: 100%;      
+    max-width: 350px;
+    height: 60px; 
+    background-color: #dbdadaa2;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+
+.info-oculta {
+    display: none; 
+    max-width: 720px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    border: 2px solid #dbdadaa2;
+}
+
+.info-oculta.mostrar {
+    display: block; }
+
 .contenedor-tarjetas {
     display: flex;  
     flex-wrap: wrap;  
