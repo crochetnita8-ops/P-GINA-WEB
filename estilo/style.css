@@ -11,17 +11,17 @@ body {
 
 h2 {
   font-family: 'Patrick Hand', cursive !important;
-  font-size: 35px; 
+  font-size: 39px; 
   text-align: center;}
 
 h3 {
   font-family: 'Patrick Hand', cursive !important;
-  font-size: 22.5px; 
+  font-size: 28px; 
   text-align: justify;}
 
   footer{
-    font-family: 'Amatic SC', cursive;
-    font-size: 18px; 
+    font-family: 'Patrick Hand', cursive !important;
+    font-size: 22px; 
   }
 
 .bordes{    /*todo el texto (EN BLANCO)*/
