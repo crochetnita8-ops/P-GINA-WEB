@@ -2,6 +2,7 @@
 
 body {
  display: flex;
+ width: 100%;
   justify-content: center; 
   align-items: center;     
   min-height: 100vh; 
@@ -146,18 +147,3 @@ a:hover {color: #9C9C9C;
     margin-top: 0;
 }
 
-@media (max-width: 768px) {
-  main, .productos, .galeria {
-    grid-template-columns: 1fr !important;
-  }
-
-  .tarjeta-diseño {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
-  .tarjeta {
-    width: 100% !important;
-    min-width: 0 !important;
-  }
-}
