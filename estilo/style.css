@@ -146,3 +146,24 @@ a:hover {color: #9C9C9C;
     margin-top: 0;
 }
 
+
+@media (max-width: 768px) {
+  /* Botones*/
+  a, button {
+    white-space: normal !important;
+    height: auto !important;
+    line-height: 1.2em !important;
+  }
+
+  /* 2 por fila en móvil */
+  main, .productos, .galeria {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 400px) {
+  a, button {
+    font-size: 12px !important;
+    padding: 6px 8px !important;
+  }
+}
