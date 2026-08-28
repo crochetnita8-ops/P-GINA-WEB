@@ -139,4 +139,18 @@ a:hover {color: #9C9C9C;
     color: #333;
     margin-top: 0;
 }
+.bloque-caja {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
 
+.logo-principal {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+}
