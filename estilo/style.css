@@ -11,6 +11,11 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  font-family: 'Patrick Hand', cursive !important;
+  font-size: 39px; 
+  text-align: center;}
+
 h2 {
   font-family: 'Patrick Hand', cursive !important;
   font-size: 39px; 
@@ -24,6 +29,7 @@ h3 {
   footer{
     font-family: 'Patrick Hand', cursive !important;
     font-size: 22px; 
+    height: 3%;
   }
 
 .bordes{    /*todo el texto (EN BLANCO)*/
@@ -35,8 +41,8 @@ h3 {
 
 }
 .bordes-formulario{ 
-   margin-left:20%;
-   margin-right:20%;
+   margin-left:15%;
+   margin-right:15%;
    margin-top: 20px;
    margin-bottom: 20px;
 
