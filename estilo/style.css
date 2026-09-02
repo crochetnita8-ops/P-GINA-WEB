@@ -6,23 +6,28 @@ body {
  max-width: 100%;
  margin: 0;
  padding: 0; 
-  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+font-family: 'Patrick Hand', cursive !important; 
   background-color: #ffffff; /*BORDES, gris*/
   overflow-x: hidden;
 }
 
 h1 {
-  font-family: 'Patrick Hand', cursive !important;
+  
   font-size: 39px; 
   text-align: center;}
 
 h2 {
-  font-family: 'Patrick Hand', cursive !important;
+  
   font-size: 39px; 
   text-align: center;}
 
+  .letra {
+    font-size: 20px;
+
+  }
+
 h3 {
-  font-family: 'Patrick Hand', cursive !important;
+  
   font-size: 30px; 
   text-align: justify;}
 
@@ -108,9 +113,10 @@ a:hover {color: #9C9C9C;
     border: 3px solid #f7ea6fcb;
     border-radius: 12px;
     background-color: #dbdadaa2;
-    padding: 2px 20px; 
+    padding: 2px 15px; 
     width: 100%;
-    max-width: 480px; 
+    max-width: 360px; 
+    max-height: 70px; 
     word-spacing: normal;
     white-space: normal;
     line-height: 1.2;
