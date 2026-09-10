@@ -46,8 +46,8 @@ h3 {
 
 }
 .bordes-formulario{ 
-   margin-left:15%;
-   margin-right:15%;
+   margin-left:10%;
+   margin-right:10%;
    margin-top: 20px;
    margin-bottom: 20px;
 
@@ -117,8 +117,6 @@ a:hover {color: #9C9C9C;
     width: 100%;
     max-width: 350px; 
     max-height: 70px; 
-    word-spacing: normal;
-    white-space: normal;
     line-height: 1.2;
     margin-bottom: 30px;
 } 
