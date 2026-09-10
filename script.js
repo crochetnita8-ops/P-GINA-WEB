@@ -194,6 +194,38 @@ window.addEventListener("load", function () {
 
 
 
+
+
+
+
+const poncho_tricolor_fotos = [
+  "IMAGEN_2/TRICOLOR_1.jpg",
+  "IMAGEN_2/TRICOLOR_2.jpg",
+  "IMAGEN_2/TRICOLOR_3.jpg",
+  "IMAGEN_2/TRICOLOR_4.jpg",
+  "IMAGEN_2/TRICOLOR_5.jpg"
+];
+let indice_poncho = 0;
+let img_poncho;
+
+function cambiarPonchoTricolor() {
+  if (img_poncho) {
+    indice_poncho = (indice_poncho + 1) % poncho_tricolor_fotos.length;
+    img_poncho.src = poncho_tricolor_fotos[indice_poncho];
+  }
+}
+
+window.addEventListener("load", function () {
+  img_poncho = document.getElementById("poncho_tricolor");
+  setInterval(cambiarPonchoTricolor, 2500);
+});
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
 
 
