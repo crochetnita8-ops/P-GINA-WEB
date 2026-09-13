@@ -35,6 +35,7 @@ h3 {
     font-family: 'Patrick Hand', cursive !important;
     font-size: 22px; 
     height: 3%;
+    text-align: justify;
   }
 
 .bordes{    /*todo el texto (EN BLANCO)*/
@@ -128,6 +129,7 @@ a:hover {color: #9C9C9C;
     max-width: 720px; 
     margin: 20px auto; 
     padding: 20px;
+    font-size: 23px;
     background-color: #f4f4f4;
     border-radius: 12px;
     border: 2px solid #dbdadaa2;
