@@ -107,7 +107,7 @@ a:hover {color: #9C9C9C;
 
 }
 
-.tarjeta-inicio, .tarjeta-diseño { 
+.tarjeta-diseño { 
     display: flex;             
     justify-content: center;   
     align-items: center;      
@@ -122,6 +122,22 @@ a:hover {color: #9C9C9C;
     margin-bottom: 30px;
 } 
 
+.tarjeta-inicio { 
+    display: flex;             
+    justify-content: center;
+    align-items: center;     
+    margin: 0 auto 30px auto; 
+    
+    border: 3px solid #f7ea6fcb;
+    border-radius: 12px;
+    background-color: #dbdadaa2;
+    padding: 2px 15px; 
+    width: 100%;
+    max-width: 350px; 
+    height: 70px;           
+    text-align: center;
+}
+
 
 
 .info-oculta {
@@ -129,7 +145,7 @@ a:hover {color: #9C9C9C;
     max-width: 720px; 
     margin: 20px auto; 
     padding: 20px;
-    font-size: 23px;
+    font-size: 24px;
     background-color: #f4f4f4;
     border-radius: 12px;
     border: 2px solid #dbdadaa2;
