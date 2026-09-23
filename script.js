@@ -226,6 +226,43 @@ window.addEventListener("load", function () {
 
 
 
+
+
+const gorro_lana_fotos = [
+  "GORRO_1/GORRO_2.jpg",
+  "GORRO_1/GORRO_3.jpg",
+  "GORRO_1/GORRO_4.jpg",
+  "GORRO_1/GORRO_5.jpg",
+  "GORRO_1/GORRO_6.jpg",
+  "GORRO_1/GORRO_7.jpg",
+  "GORRO_1/GORRO_8.jpg",
+  "GORRO_1/GORRO_1.jpg"
+];
+let indice_gorro_lana = 0;
+let img_gorro_lana;
+
+function cambiarGorroLana() {
+  if (img_gorro_lana) {
+    indice_gorro_lana = (indice_gorro_lana + 1) % gorro_lana_fotos.length;
+    img_gorro_lana.src = gorro_lana_fotos[indice_gorro_lana];
+  }
+}
+
+window.addEventListener("load", function () {
+  img_gorro_lana = document.getElementById("gorro_lana");
+  setInterval(cambiarGorroLana, 2500);
+});
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
 
 
