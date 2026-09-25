@@ -263,25 +263,6 @@ window.addEventListener("load", function () {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-
-
-    const formulario = document.getElementById('mi-formulario');
-    const emailInput = document.getElementById('campo-email');
-
-    if (formulario) {
-        formulario.addEventListener('submit', function(evento) {
-
-            if (!emailInput.checkValidity()) {
-                evento.preventDefault(); 
-                alert('¡Por favor, pon un correo electrónico válido!');
-            }
-        });
-    }
-});
-
-
-
     document.addEventListener("DOMContentLoaded", function () {
         const boton = document.getElementById('boton-pedido');
         const texto = document.getElementById('texto-pedido');
@@ -291,3 +272,51 @@ document.addEventListener('DOMContentLoaded', function() {
             texto.classList.toggle('mostrar'); 
         });
     });
+
+
+
+
+
+
+
+
+
+
+
+  //formulario
+
+
+
+  // 1. Guardamos tu enlace de Google en una variable (¡Exactamente como tú has dicho!)
+const scriptURL = 'https://script.google.com/macros/s/AKfycbydh8DnSnEq4EUQak1ztxab6UDsRRnrLnez3df8xSt8HOZXF8A2wv_lIHIHN-zght-X/exec';
+
+const form = document.getElementById('formulario-contacto');
+
+
+form.addEventListener('submit', e => {
+  // para que la página no se recargue o se vaya a otra pantalla
+  e.preventDefault();
+  
+  // Cambiamos el texto del botón temporalmente
+  const boton = form.querySelector('button[type="submit"]');
+  const textoOriginal = boton.innerText;
+  boton.innerText = "ENVIANDO...";
+  boton.disabled = true;
+
+  // 4. Mandamos los datos de tu formulario al Excel en segundo plano
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        // Si todo va bien, avisamos al usuario, vaciamos el formulario y restauramos el botón
+        alert('¡Gracias! Hemos recibido tu sugerencia correctamente en Crochet Nita.');
+        form.reset(); 
+        boton.innerText = textoOriginal;
+        boton.disabled = false;
+    })
+    .catch(error => {
+        // Si algo falla, avisamos del error por consola y devolvemos el botón a su estado original
+        console.error('¡Error al enviar!', error.message);
+        alert('Vaya, hubo un problema al enviar el formulario. Inténtalo de nuevo.');
+        boton.innerText = textoOriginal;
+        boton.disabled = false;
+    });
+});
