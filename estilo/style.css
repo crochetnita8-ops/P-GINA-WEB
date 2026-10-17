@@ -16,6 +16,12 @@ h1 {
   font-size: 39px; 
   text-align: center;}
 
+#nuestra-historia {
+  font-size: 50px; 
+  text-align: center;
+  color: rgb(201, 164, 2);
+}
+
 h2 {
   
   font-size: 39px; 
@@ -29,7 +35,9 @@ h2 {
 h3 {
   
   font-size: 30px; 
-  text-align: justify;}
+  text-align: justify;
+justify-content: center;
+  margin: 0 auto;}
 
   footer{
     font-family: 'Patrick Hand', cursive !important;
@@ -81,7 +89,7 @@ h3 {
   padding: 8px;
 }
 
-a {  color:rgba(223, 193, 1, 0.831);
+a {  color: rgba(62, 62, 61, 0.911);;
 text-decoration: none }
 
 a:hover {color: #9C9C9C;
@@ -93,6 +101,7 @@ a:hover {color: #9C9C9C;
     text-align: center; 
 }
 .tarjeta {
+    
     border: 3px solid #f7ea6fcb;
     border-radius: 12px;
     padding: 15px;  
@@ -107,38 +116,22 @@ a:hover {color: #9C9C9C;
 
 }
 
-.tarjeta-diseño { 
-    display: flex;             
-    justify-content: center;   
-    align-items: center;      
-    border: 3px solid #f7ea6fcb;
-    border-radius: 12px;
-    background-color: #dbdadaa2;
-    padding: 2px 15px; 
-    width: 100%;
-    max-width: 350px; 
-    max-height: 70px; 
-    line-height: 1.2;
-    margin-bottom: 30px;
-} 
-
 .tarjeta-inicio { 
+    font-size: 24px; 
+    font-family: 'Patrick Hand', cursive;
     display: flex;             
     justify-content: center;
     align-items: center;     
-    margin: 0 auto 30px auto; 
-    
-    border: 3px solid #f7ea6fcb;
-    border-radius: 12px;
-    background-color: #dbdadaa2;
-    padding: 2px 15px; 
+    margin: 15px auto 30px auto; 
+    border: 3px solid  #686868;
+    border-radius: 30px;
+    background-color: #FFF176;
+    padding: 0; 
     width: 100%;
     max-width: 350px; 
-    height: 70px;           
-    text-align: center;
+    height: 50px;     
+    text-align: center;       
 }
-
-
 
 .info-oculta {
     display: none; 
