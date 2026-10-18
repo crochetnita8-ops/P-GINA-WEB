@@ -176,15 +176,26 @@ a:hover {color: #9C9C9C;
     font-family: 'Patrick Hand', cursive;
 }
   
+
+.nuestra-historia {
+  color:rgba(44, 44, 43, 0.911);
+  font-size: 24px;
+  font-family: 'Patrick Hand', cursive;
+  padding: 15px 20px;
+  border: 3px solid #b5971e;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
 .info-oculta {
     display: none; 
     max-width: 720px; 
     margin: 20px auto; 
     padding: 20px;
     font-size: 24px;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     border-radius: 12px;
-    border: 2px solid #dbdadaa2;
+    border: 3px solid  #b5971e;
 }
 
 .info-oculta.mostrar {
