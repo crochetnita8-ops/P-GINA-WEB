@@ -302,17 +302,17 @@ form.addEventListener('submit', e => {
   boton.innerText = "ENVIANDO...";
   boton.disabled = true;
 
-  // 4. Mandamos los datos de tu formulario al Excel en segundo plano
+
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
-        // Si todo va bien, avisamos al usuario, vaciamos el formulario y restauramos el botón
+        // avisamos, vaciamos el formulario y restauramos el botón
         alert('¡Gracias! Hemos recibido tu sugerencia correctamente en Crochet Nita.');
         form.reset(); 
         boton.innerText = textoOriginal;
         boton.disabled = false;
     })
     .catch(error => {
-        // Si algo falla, avisamos del error por consola y devolvemos el botón a su estado original
+        // Si algo falla
         console.error('¡Error al enviar!', error.message);
         alert('Vaya, hubo un problema al enviar el formulario. Inténtalo de nuevo.');
         boton.innerText = textoOriginal;
