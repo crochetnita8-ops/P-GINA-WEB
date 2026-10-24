@@ -283,12 +283,11 @@ window.addEventListener("load", function () {
 
 
 
-  //formulario
 
 
 
-  // 1. Guardamos tu enlace de Google en una variable (¡Exactamente como tú has dicho!)
-const scriptURL = 'https://script.google.com/macros/s/AKfycbydh8DnSnEq4EUQak1ztxab6UDsRRnrLnez3df8xSt8HOZXF8A2wv_lIHIHN-zght-X/exec';
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyl1NVY0cwVoz-gXHM8OyN1xZf5uflXwOmZgk-CasUtfhpovq6sD5HgE0r_WP8XPjjd/exec';
 
 const form = document.getElementById('formulario-contacto');
 
