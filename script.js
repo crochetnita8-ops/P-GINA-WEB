@@ -258,6 +258,54 @@ window.addEventListener("load", function () {
 
 
 
+const chal_triangular_fotos = [
+  "IMAGEN_2/Chalina_triangular_1.jpg",
+  "IMAGEN_2/Chalina_triangular_2.jpg",
+  "IMAGEN_2/Chalina_triangular_3.jpg",
+  "IMAGEN_2/Chalina_triangular_4.jpg",
+  "IMAGEN_2/Chalina_triangular_5.jpg"
+];
+let indice_chal = 0;
+let img_chal;
+
+function cambiarChalTriangular() {
+  if (img_chal) {
+    indice_chal = (indice_chal + 1) % chal_triangular_fotos.length;
+    img_chal.src = chal_triangular_fotos[indice_chal];
+  }
+}
+
+window.addEventListener("load", function () {
+  img_chal = document.getElementById("chal_triangular");
+  setInterval(cambiarChalTriangular, 2500);
+});
+
+
+
+
+
+
+const chalina_verde_fotos = [
+  "IMAGEN_2/Chalina_verde_1.jpg",
+  "IMAGEN_2/Chalina_verde_2.jpg",
+  "IMAGEN_2/Chalina_verde_3.jpg",
+  "IMAGEN_2/Chalina_verde_4.jpg",
+  "IMAGEN_2/Chalina_verde_5.jpg"
+];
+let indice_chalina_verde = 0;
+let img_chalina_verde;
+
+function cambiarChalinaVerde() {
+  if (img_chalina_verde) {
+    indice_chalina_verde = (indice_chalina_verde + 1) % chalina_verde_fotos.length;
+    img_chalina_verde.src = chalina_verde_fotos[indice_chalina_verde];
+  }
+}
+
+window.addEventListener("load", function () {
+  img_chalina_verde = document.getElementById("chalina_verde");
+  setInterval(cambiarChalinaVerde, 2500);
+});
 
 
 
