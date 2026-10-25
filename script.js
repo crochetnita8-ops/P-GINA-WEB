@@ -200,6 +200,7 @@ window.addEventListener("load", function () {
 
 const poncho_tricolor_fotos = [
   "IMAGEN_2/TRICOLOR_1.jpg",
+  "IMAGEN_2/TRICOLOR_2.jpg",
   "IMAGEN_2/TRICOLOR_3.jpg",
   "IMAGEN_2/TRICOLOR_4.jpg",
   "IMAGEN_2/TRICOLOR_5.jpg"
@@ -258,11 +259,11 @@ window.addEventListener("load", function () {
 
 
 const chal_triangular_fotos = [
-  "IMAGEN_2/Chalina_triangular_1.jpg",
-  "IMAGEN_2/Chalina_triangular_2.jpg",
-  "IMAGEN_2/Chalina_triangular_3.jpg",
-  "IMAGEN_2/Chalina_triangular_4.jpg",
-  "IMAGEN_2/Chalina_triangular_5.jpg"
+  "IMAGENES_3/Chalina_triangular_1 - copia.jpg",
+  "IMAGENES_3/Chalina_triangular_2 - copia.jpg",
+  "IMAGENES_3/Chalina_triangular_3 - copia.jpg",
+  "IMAGENES_3/Chalina_triangular_4 - copia.jpg",
+  "IMAGENES_3/Chalina_triangular_5 - copia.jpg",
 ];
 let indice_chal = 0;
 let img_chal;
@@ -286,6 +287,7 @@ window.addEventListener("load", function () {
 
 const chalina_verde_fotos = [
   "IMAGEN_2/Chalina_verde_1.jpg",
+  "IMAGEN_2/Chalina_verde_2.jpg",
   "IMAGEN_2/Chalina_verde_3.jpg",
   "IMAGEN_2/Chalina_verde_4.jpg",
   "IMAGEN_2/Chalina_verde_5.jpg"
